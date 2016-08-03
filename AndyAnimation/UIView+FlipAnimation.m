@@ -8,6 +8,7 @@
 
 #import "UIView+FlipAnimation.h"
 #import "UIView+BaseAnimation.h"
+#import "UIView+FadeAnimation.h"
 #import "AndyAnimationConst.h"
 #import <POP/POP.h>
 

@@ -7,6 +7,7 @@
 //
 
 #import "CALayer+BounceAnimation.h"
+#import "CALayer+FadeAnimation.h"
 #import "AndyAnimation.h"
 #import "CALayer+BaseAnimation.h"
 

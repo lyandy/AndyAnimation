@@ -7,6 +7,7 @@
 //
 
 #import "UIView+BounceAnimation.h"
+#import "UIView+FadeAnimation.h"
 #import "UIView+BaseAnimation.h"
 #import "AndyAnimationConst.h"
 
