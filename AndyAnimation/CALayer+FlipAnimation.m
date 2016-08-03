@@ -10,6 +10,7 @@
 #import "CALayer+FadeAnimation.h"
 #import "CALayer+BaseAnimation.h"
 #import "AndyAnimationConst.h"
+#import <Pop/POP.h>
 
 #define FlipSpringSpeed 10
 #define FlipSpringBounciness 15
