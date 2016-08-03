@@ -7,6 +7,7 @@
 //
 
 #import "UIView+ResetAnimation.h"
+#import <POP/POP.h>
 
 @implementation UIView (ResetAnimation)
 

@@ -7,7 +7,7 @@
 //
 
 #import "CALayer+BaseAnimation.h"
-#import <Pop/POP.h>
+#import <POP/POP.h>
 
 @implementation CALayer (BaseAnimation)
 

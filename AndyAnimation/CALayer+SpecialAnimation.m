@@ -9,6 +9,7 @@
 #import "CALayer+SpecialAnimation.h"
 #import "CALayer+BaseAnimation.h"
 #import "AndyAnimationConst.h"
+#import <POP/POP.h>
 
 @implementation CALayer (SpecialAnimation)
 

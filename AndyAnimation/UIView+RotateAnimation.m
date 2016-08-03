@@ -9,6 +9,7 @@
 #import "UIView+RotateAnimation.h"
 #import "UIView+BaseAnimation.h"
 #import "AndyAnimationConst.h"
+#import <POP/POP.h>
 
 @implementation UIView (RotateAnimation)
 - (void)andy_addRotateAnimationToAngle:(NSValue *)angel

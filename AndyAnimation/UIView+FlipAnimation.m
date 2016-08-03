@@ -9,6 +9,7 @@
 #import "UIView+FlipAnimation.h"
 #import "UIView+BaseAnimation.h"
 #import "AndyAnimationConst.h"
+#import <POP/POP.h>
 
 #define FlipSpringSpeed 10
 #define FlipSpringBounciness 15

@@ -7,6 +7,7 @@
 //
 
 #import "CALayer+ResetAnimation.h"
+#import <POP/POP.h>
 
 @implementation CALayer (ResetAnimation)
 
