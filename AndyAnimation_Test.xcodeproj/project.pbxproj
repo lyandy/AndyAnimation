@@ -1,0 +1,947 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A11C00021D50E41E00E5A43B /* UIView+ScaleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = A11C00011D50E41E00E5A43B /* UIView+ScaleAnimation.m */; };
+		A11C00051D50E5DE00E5A43B /* UIView+BounceAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = A11C00041D50E5DE00E5A43B /* UIView+BounceAnimation.m */; };
+		A11C00081D50E8AD00E5A43B /* UIView+SpecialAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = A11C00071D50E8AD00E5A43B /* UIView+SpecialAnimation.m */; };
+		A11C000B1D50E98800E5A43B /* UIView+FlipAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = A11C000A1D50E98800E5A43B /* UIView+FlipAnimation.m */; };
+		A11C000E1D50EA4400E5A43B /* UIView+RotateAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = A11C000D1D50EA4400E5A43B /* UIView+RotateAnimation.m */; };
+		A11C00111D50EEF300E5A43B /* UIView+ResetAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = A11C00101D50EEF300E5A43B /* UIView+ResetAnimation.m */; };
+		A11CFFFF1D50E35700E5A43B /* UIView+MoveAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = A11CFFFE1D50E35700E5A43B /* UIView+MoveAnimation.m */; };
+		B6461C591D4EEF0A00CD1E5A /* UIView+BaseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B6461C561D4EEF0A00CD1E5A /* UIView+BaseAnimation.m */; };
+		B6461C5A1D4EEF0A00CD1E5A /* UIView+FadeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B6461C581D4EEF0A00CD1E5A /* UIView+FadeAnimation.m */; };
+		B6461C601D4F06D800CD1E5A /* CALayer+ScaleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B6461C5F1D4F06D800CD1E5A /* CALayer+ScaleAnimation.m */; };
+		B6461C631D4F07FD00CD1E5A /* CALayer+RotateAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B6461C621D4F07FD00CD1E5A /* CALayer+RotateAnimation.m */; };
+		B64AB9561D5051E7005E4F3D /* CALayer+FlipAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B64AB9551D5051E7005E4F3D /* CALayer+FlipAnimation.m */; };
+		B64AB9591D507B82005E4F3D /* CALayer+SpecialAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B64AB9581D507B82005E4F3D /* CALayer+SpecialAnimation.m */; };
+		B64AB95C1D50A92C005E4F3D /* CALayer+ResetAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B64AB95B1D50A92C005E4F3D /* CALayer+ResetAnimation.m */; };
+		B6A2F0601D49C3E600E8145C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A2F05F1D49C3E600E8145C /* main.m */; };
+		B6A2F06B1D49C3E600E8145C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6A2F06A1D49C3E600E8145C /* Assets.xcassets */; };
+		B6A2F0791D49C3E600E8145C /* AndyAnimation_TestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A2F0781D49C3E600E8145C /* AndyAnimation_TestTests.m */; };
+		B6A2F0841D49C3E600E8145C /* AndyAnimation_TestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A2F0831D49C3E600E8145C /* AndyAnimation_TestUITests.m */; };
+		B6A2F0AE1D49DB8100E8145C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A2F0A81D49DB8100E8145C /* AppDelegate.m */; };
+		B6A2F0BA1D49DC3A00E8145C /* AndyMainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A2F0B81D49DC3A00E8145C /* AndyMainTableViewController.m */; };
+		B6A2F0BB1D49DC3A00E8145C /* AndyMainTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6A2F0B91D49DC3A00E8145C /* AndyMainTableViewController.xib */; };
+		B6A34DA41D4F5712005EBB4C /* CALayer+BounceAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A34DA31D4F5712005EBB4C /* CALayer+BounceAnimation.m */; };
+		B6A6FA171D49EFD400EA1766 /* AndyConst.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A6FA161D49EFD400EA1766 /* AndyConst.m */; };
+		B6A6FA1B1D49F22400EA1766 /* AndyFadeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A6FA191D49F22400EA1766 /* AndyFadeViewController.m */; };
+		B6A6FA1C1D49F22400EA1766 /* AndyFadeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6A6FA1A1D49F22400EA1766 /* AndyFadeViewController.xib */; };
+		B6A6FA251D49FBB400EA1766 /* CALayer+FadeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A6FA241D49FBB400EA1766 /* CALayer+FadeAnimation.m */; };
+		B6A6FA2C1D4A018A00EA1766 /* CALayer+BaseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A6FA2B1D4A018A00EA1766 /* CALayer+BaseAnimation.m */; };
+		B6A6FA2F1D4A020A00EA1766 /* AndyAnimationConst.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A6FA2E1D4A020A00EA1766 /* AndyAnimationConst.m */; };
+		B6A6FA351D4A0F6200EA1766 /* CALayer+MoveAniamtion.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A6FA341D4A0F6200EA1766 /* CALayer+MoveAniamtion.m */; };
+		D6B1ED098BD138BF171FDDDB /* libPods-AndyAnimation_Test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C433DD2F63AD0C67ABC5BB7 /* libPods-AndyAnimation_Test.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B6A2F0751D49C3E600E8145C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6A2F0531D49C3E600E8145C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6A2F05A1D49C3E600E8145C;
+			remoteInfo = AndyAnimation_Test;
+		};
+		B6A2F0801D49C3E600E8145C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6A2F0531D49C3E600E8145C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6A2F05A1D49C3E600E8145C;
+			remoteInfo = AndyAnimation_Test;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B8C70382CA81FA991D5461C /* Pods-AndyAnimation_Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AndyAnimation_Test.release.xcconfig"; path = "Pods/Target Support Files/Pods-AndyAnimation_Test/Pods-AndyAnimation_Test.release.xcconfig"; sourceTree = "<group>"; };
+		3FDBF64A0FAAFB347759401E /* Pods-AndyAnimation_Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AndyAnimation_Test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AndyAnimation_Test/Pods-AndyAnimation_Test.debug.xcconfig"; sourceTree = "<group>"; };
+		4C433DD2F63AD0C67ABC5BB7 /* libPods-AndyAnimation_Test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AndyAnimation_Test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A11C00001D50E41E00E5A43B /* UIView+ScaleAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ScaleAnimation.h"; sourceTree = "<group>"; };
+		A11C00011D50E41E00E5A43B /* UIView+ScaleAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ScaleAnimation.m"; sourceTree = "<group>"; };
+		A11C00031D50E5DE00E5A43B /* UIView+BounceAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BounceAnimation.h"; sourceTree = "<group>"; };
+		A11C00041D50E5DE00E5A43B /* UIView+BounceAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BounceAnimation.m"; sourceTree = "<group>"; };
+		A11C00061D50E8AD00E5A43B /* UIView+SpecialAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SpecialAnimation.h"; sourceTree = "<group>"; };
+		A11C00071D50E8AD00E5A43B /* UIView+SpecialAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SpecialAnimation.m"; sourceTree = "<group>"; };
+		A11C00091D50E98800E5A43B /* UIView+FlipAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FlipAnimation.h"; sourceTree = "<group>"; };
+		A11C000A1D50E98800E5A43B /* UIView+FlipAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FlipAnimation.m"; sourceTree = "<group>"; };
+		A11C000C1D50EA4400E5A43B /* UIView+RotateAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RotateAnimation.h"; sourceTree = "<group>"; };
+		A11C000D1D50EA4400E5A43B /* UIView+RotateAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RotateAnimation.m"; sourceTree = "<group>"; };
+		A11C000F1D50EEF300E5A43B /* UIView+ResetAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ResetAnimation.h"; sourceTree = "<group>"; };
+		A11C00101D50EEF300E5A43B /* UIView+ResetAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ResetAnimation.m"; sourceTree = "<group>"; };
+		A11CFFFD1D50E35700E5A43B /* UIView+MoveAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MoveAnimation.h"; sourceTree = "<group>"; };
+		A11CFFFE1D50E35700E5A43B /* UIView+MoveAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MoveAnimation.m"; sourceTree = "<group>"; };
+		B6461C551D4EEF0A00CD1E5A /* UIView+BaseAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BaseAnimation.h"; sourceTree = "<group>"; };
+		B6461C561D4EEF0A00CD1E5A /* UIView+BaseAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BaseAnimation.m"; sourceTree = "<group>"; };
+		B6461C571D4EEF0A00CD1E5A /* UIView+FadeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FadeAnimation.h"; sourceTree = "<group>"; };
+		B6461C581D4EEF0A00CD1E5A /* UIView+FadeAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FadeAnimation.m"; sourceTree = "<group>"; };
+		B6461C5E1D4F06D800CD1E5A /* CALayer+ScaleAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+ScaleAnimation.h"; sourceTree = "<group>"; };
+		B6461C5F1D4F06D800CD1E5A /* CALayer+ScaleAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+ScaleAnimation.m"; sourceTree = "<group>"; };
+		B6461C611D4F07FD00CD1E5A /* CALayer+RotateAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+RotateAnimation.h"; sourceTree = "<group>"; };
+		B6461C621D4F07FD00CD1E5A /* CALayer+RotateAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+RotateAnimation.m"; sourceTree = "<group>"; };
+		B64AB9541D5051E7005E4F3D /* CALayer+FlipAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+FlipAnimation.h"; sourceTree = "<group>"; };
+		B64AB9551D5051E7005E4F3D /* CALayer+FlipAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+FlipAnimation.m"; sourceTree = "<group>"; };
+		B64AB9571D507B82005E4F3D /* CALayer+SpecialAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+SpecialAnimation.h"; sourceTree = "<group>"; };
+		B64AB9581D507B82005E4F3D /* CALayer+SpecialAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+SpecialAnimation.m"; sourceTree = "<group>"; };
+		B64AB95A1D50A92C005E4F3D /* CALayer+ResetAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+ResetAnimation.h"; sourceTree = "<group>"; };
+		B64AB95B1D50A92C005E4F3D /* CALayer+ResetAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+ResetAnimation.m"; sourceTree = "<group>"; };
+		B6A2F05B1D49C3E600E8145C /* AndyAnimation_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AndyAnimation_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6A2F05F1D49C3E600E8145C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6A2F06A1D49C3E600E8145C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B6A2F06F1D49C3E600E8145C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6A2F0741D49C3E600E8145C /* AndyAnimation_TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AndyAnimation_TestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6A2F0781D49C3E600E8145C /* AndyAnimation_TestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AndyAnimation_TestTests.m; sourceTree = "<group>"; };
+		B6A2F07A1D49C3E600E8145C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6A2F07F1D49C3E600E8145C /* AndyAnimation_TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AndyAnimation_TestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6A2F0831D49C3E600E8145C /* AndyAnimation_TestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AndyAnimation_TestUITests.m; sourceTree = "<group>"; };
+		B6A2F0851D49C3E600E8145C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6A2F0A71D49DB8100E8145C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B6A2F0A81D49DB8100E8145C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B6A2F0B71D49DC3A00E8145C /* AndyMainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AndyMainTableViewController.h; sourceTree = "<group>"; };
+		B6A2F0B81D49DC3A00E8145C /* AndyMainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AndyMainTableViewController.m; sourceTree = "<group>"; };
+		B6A2F0B91D49DC3A00E8145C /* AndyMainTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AndyMainTableViewController.xib; sourceTree = "<group>"; };
+		B6A2F0C11D49DF2800E8145C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		B6A2F0C21D49DF4300E8145C /* Global.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
+		B6A34DA21D4F5712005EBB4C /* CALayer+BounceAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+BounceAnimation.h"; sourceTree = "<group>"; };
+		B6A34DA31D4F5712005EBB4C /* CALayer+BounceAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+BounceAnimation.m"; sourceTree = "<group>"; };
+		B6A6F9091D49E51100EA1766 /* AndyAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AndyAnimation.h; sourceTree = "<group>"; };
+		B6A6FA151D49EFD400EA1766 /* AndyConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AndyConst.h; sourceTree = "<group>"; };
+		B6A6FA161D49EFD400EA1766 /* AndyConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AndyConst.m; sourceTree = "<group>"; };
+		B6A6FA181D49F22400EA1766 /* AndyFadeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AndyFadeViewController.h; sourceTree = "<group>"; };
+		B6A6FA191D49F22400EA1766 /* AndyFadeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AndyFadeViewController.m; sourceTree = "<group>"; };
+		B6A6FA1A1D49F22400EA1766 /* AndyFadeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AndyFadeViewController.xib; sourceTree = "<group>"; };
+		B6A6FA231D49FBB400EA1766 /* CALayer+FadeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+FadeAnimation.h"; sourceTree = "<group>"; };
+		B6A6FA241D49FBB400EA1766 /* CALayer+FadeAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+FadeAnimation.m"; sourceTree = "<group>"; };
+		B6A6FA2A1D4A018A00EA1766 /* CALayer+BaseAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+BaseAnimation.h"; sourceTree = "<group>"; };
+		B6A6FA2B1D4A018A00EA1766 /* CALayer+BaseAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+BaseAnimation.m"; sourceTree = "<group>"; };
+		B6A6FA2D1D4A020A00EA1766 /* AndyAnimationConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AndyAnimationConst.h; sourceTree = "<group>"; };
+		B6A6FA2E1D4A020A00EA1766 /* AndyAnimationConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AndyAnimationConst.m; sourceTree = "<group>"; };
+		B6A6FA331D4A0F6200EA1766 /* CALayer+MoveAniamtion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+MoveAniamtion.h"; sourceTree = "<group>"; };
+		B6A6FA341D4A0F6200EA1766 /* CALayer+MoveAniamtion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+MoveAniamtion.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B6A2F0581D49C3E600E8145C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6B1ED098BD138BF171FDDDB /* libPods-AndyAnimation_Test.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6A2F0711D49C3E600E8145C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6A2F07C1D49C3E600E8145C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29343479688CD31329447908 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3FDBF64A0FAAFB347759401E /* Pods-AndyAnimation_Test.debug.xcconfig */,
+				1B8C70382CA81FA991D5461C /* Pods-AndyAnimation_Test.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B6A2F0521D49C3E600E8145C = {
+			isa = PBXGroup;
+			children = (
+				B6A2F0AF1D49DB9900E8145C /* AndyAnimation */,
+				B6A2F05D1D49C3E600E8145C /* AndyAnimation_Test */,
+				B6A2F0771D49C3E600E8145C /* AndyAnimation_TestTests */,
+				B6A2F0821D49C3E600E8145C /* AndyAnimation_TestUITests */,
+				B6A2F05C1D49C3E600E8145C /* Products */,
+				29343479688CD31329447908 /* Pods */,
+				CABEF3B5251D2D687E9F7F45 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B6A2F05C1D49C3E600E8145C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6A2F05B1D49C3E600E8145C /* AndyAnimation_Test.app */,
+				B6A2F0741D49C3E600E8145C /* AndyAnimation_TestTests.xctest */,
+				B6A2F07F1D49C3E600E8145C /* AndyAnimation_TestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6A2F05D1D49C3E600E8145C /* AndyAnimation_Test */ = {
+			isa = PBXGroup;
+			children = (
+				B6A2F0911D49DB8100E8145C /* Classes */,
+				B6A2F05E1D49C3E600E8145C /* Supporting Files */,
+			);
+			path = AndyAnimation_Test;
+			sourceTree = "<group>";
+		};
+		B6A2F05E1D49C3E600E8145C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6A2F06F1D49C3E600E8145C /* Info.plist */,
+				B6A2F06A1D49C3E600E8145C /* Assets.xcassets */,
+				B6A2F05F1D49C3E600E8145C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B6A2F0771D49C3E600E8145C /* AndyAnimation_TestTests */ = {
+			isa = PBXGroup;
+			children = (
+				B6A2F0781D49C3E600E8145C /* AndyAnimation_TestTests.m */,
+				B6A2F07A1D49C3E600E8145C /* Info.plist */,
+			);
+			path = AndyAnimation_TestTests;
+			sourceTree = "<group>";
+		};
+		B6A2F0821D49C3E600E8145C /* AndyAnimation_TestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B6A2F0831D49C3E600E8145C /* AndyAnimation_TestUITests.m */,
+				B6A2F0851D49C3E600E8145C /* Info.plist */,
+			);
+			path = AndyAnimation_TestUITests;
+			sourceTree = "<group>";
+		};
+		B6A2F0911D49DB8100E8145C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B6A2F0A21D49DB8100E8145C /* Main */,
+				B6A2F0921D49DB8100E8145C /* Attension */,
+				B6A2F0961D49DB8100E8145C /* Bounce */,
+				B6A2F09A1D49DB8100E8145C /* Fade */,
+				B6A2F09E1D49DB8100E8145C /* Flip */,
+				B6A2F0AA1D49DB8100E8145C /* Special */,
+				B6A2F0A61D49DB8100E8145C /* Other */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B6A2F0921D49DB8100E8145C /* Attension */ = {
+			isa = PBXGroup;
+			children = (
+				B6A2F0931D49DB8100E8145C /* Model */,
+				B6A2F0941D49DB8100E8145C /* View */,
+				B6A2F0951D49DB8100E8145C /* ViewModel */,
+			);
+			path = Attension;
+			sourceTree = "<group>";
+		};
+		B6A2F0931D49DB8100E8145C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B6A2F0941D49DB8100E8145C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B6A2F0951D49DB8100E8145C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B6A2F0961D49DB8100E8145C /* Bounce */ = {
+			isa = PBXGroup;
+			children = (
+				B6A2F0971D49DB8100E8145C /* Model */,
+				B6A2F0981D49DB8100E8145C /* View */,
+				B6A2F0991D49DB8100E8145C /* ViewModel */,
+			);
+			path = Bounce;
+			sourceTree = "<group>";
+		};
+		B6A2F0971D49DB8100E8145C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B6A2F0981D49DB8100E8145C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B6A2F0991D49DB8100E8145C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B6A2F09A1D49DB8100E8145C /* Fade */ = {
+			isa = PBXGroup;
+			children = (
+				B6A2F09B1D49DB8100E8145C /* Model */,
+				B6A2F09C1D49DB8100E8145C /* View */,
+				B6A2F09D1D49DB8100E8145C /* ViewModel */,
+			);
+			path = Fade;
+			sourceTree = "<group>";
+		};
+		B6A2F09B1D49DB8100E8145C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B6A2F09C1D49DB8100E8145C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B6A6FA181D49F22400EA1766 /* AndyFadeViewController.h */,
+				B6A6FA191D49F22400EA1766 /* AndyFadeViewController.m */,
+				B6A6FA1A1D49F22400EA1766 /* AndyFadeViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B6A2F09D1D49DB8100E8145C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B6A2F09E1D49DB8100E8145C /* Flip */ = {
+			isa = PBXGroup;
+			children = (
+				B6A2F09F1D49DB8100E8145C /* Model */,
+				B6A2F0A01D49DB8100E8145C /* View */,
+				B6A2F0A11D49DB8100E8145C /* ViewModel */,
+			);
+			path = Flip;
+			sourceTree = "<group>";
+		};
+		B6A2F09F1D49DB8100E8145C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B6A2F0A01D49DB8100E8145C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B6A2F0A11D49DB8100E8145C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B6A2F0A21D49DB8100E8145C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B6A2F0A31D49DB8100E8145C /* Model */,
+				B6A2F0A41D49DB8100E8145C /* View */,
+				B6A2F0A51D49DB8100E8145C /* ViewModel */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B6A2F0A31D49DB8100E8145C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B6A2F0A41D49DB8100E8145C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B6A2F0B71D49DC3A00E8145C /* AndyMainTableViewController.h */,
+				B6A2F0B81D49DC3A00E8145C /* AndyMainTableViewController.m */,
+				B6A2F0B91D49DC3A00E8145C /* AndyMainTableViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B6A2F0A51D49DB8100E8145C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B6A2F0A61D49DB8100E8145C /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				B6A2F0A91D49DB8100E8145C /* Cateogry */,
+				B6A2F0A71D49DB8100E8145C /* AppDelegate.h */,
+				B6A2F0A81D49DB8100E8145C /* AppDelegate.m */,
+				B6A2F0C11D49DF2800E8145C /* PrefixHeader.pch */,
+				B6A2F0C21D49DF4300E8145C /* Global.h */,
+				B6A6FA151D49EFD400EA1766 /* AndyConst.h */,
+				B6A6FA161D49EFD400EA1766 /* AndyConst.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		B6A2F0A91D49DB8100E8145C /* Cateogry */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cateogry;
+			sourceTree = "<group>";
+		};
+		B6A2F0AA1D49DB8100E8145C /* Special */ = {
+			isa = PBXGroup;
+			children = (
+				B6A2F0AB1D49DB8100E8145C /* Model */,
+				B6A2F0AC1D49DB8100E8145C /* View */,
+				B6A2F0AD1D49DB8100E8145C /* ViewModel */,
+			);
+			path = Special;
+			sourceTree = "<group>";
+		};
+		B6A2F0AB1D49DB8100E8145C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B6A2F0AC1D49DB8100E8145C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B6A2F0AD1D49DB8100E8145C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B6A2F0AF1D49DB9900E8145C /* AndyAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				B6A6F9091D49E51100EA1766 /* AndyAnimation.h */,
+				B6A6FA2A1D4A018A00EA1766 /* CALayer+BaseAnimation.h */,
+				B6A6FA2B1D4A018A00EA1766 /* CALayer+BaseAnimation.m */,
+				B6A6FA231D49FBB400EA1766 /* CALayer+FadeAnimation.h */,
+				B6A6FA241D49FBB400EA1766 /* CALayer+FadeAnimation.m */,
+				B6A34DA21D4F5712005EBB4C /* CALayer+BounceAnimation.h */,
+				B6A34DA31D4F5712005EBB4C /* CALayer+BounceAnimation.m */,
+				B64AB9541D5051E7005E4F3D /* CALayer+FlipAnimation.h */,
+				B64AB9551D5051E7005E4F3D /* CALayer+FlipAnimation.m */,
+				B64AB9571D507B82005E4F3D /* CALayer+SpecialAnimation.h */,
+				B64AB9581D507B82005E4F3D /* CALayer+SpecialAnimation.m */,
+				B6A6FA331D4A0F6200EA1766 /* CALayer+MoveAniamtion.h */,
+				B6A6FA341D4A0F6200EA1766 /* CALayer+MoveAniamtion.m */,
+				B6461C611D4F07FD00CD1E5A /* CALayer+RotateAnimation.h */,
+				B6461C621D4F07FD00CD1E5A /* CALayer+RotateAnimation.m */,
+				B6461C5E1D4F06D800CD1E5A /* CALayer+ScaleAnimation.h */,
+				B6461C5F1D4F06D800CD1E5A /* CALayer+ScaleAnimation.m */,
+				B64AB95A1D50A92C005E4F3D /* CALayer+ResetAnimation.h */,
+				B64AB95B1D50A92C005E4F3D /* CALayer+ResetAnimation.m */,
+				B6461C551D4EEF0A00CD1E5A /* UIView+BaseAnimation.h */,
+				B6461C561D4EEF0A00CD1E5A /* UIView+BaseAnimation.m */,
+				B6461C571D4EEF0A00CD1E5A /* UIView+FadeAnimation.h */,
+				B6461C581D4EEF0A00CD1E5A /* UIView+FadeAnimation.m */,
+				A11C00031D50E5DE00E5A43B /* UIView+BounceAnimation.h */,
+				A11C00041D50E5DE00E5A43B /* UIView+BounceAnimation.m */,
+				A11C00091D50E98800E5A43B /* UIView+FlipAnimation.h */,
+				A11C000A1D50E98800E5A43B /* UIView+FlipAnimation.m */,
+				A11C00061D50E8AD00E5A43B /* UIView+SpecialAnimation.h */,
+				A11C00071D50E8AD00E5A43B /* UIView+SpecialAnimation.m */,
+				A11CFFFD1D50E35700E5A43B /* UIView+MoveAnimation.h */,
+				A11CFFFE1D50E35700E5A43B /* UIView+MoveAnimation.m */,
+				A11C000C1D50EA4400E5A43B /* UIView+RotateAnimation.h */,
+				A11C000D1D50EA4400E5A43B /* UIView+RotateAnimation.m */,
+				A11C00001D50E41E00E5A43B /* UIView+ScaleAnimation.h */,
+				A11C00011D50E41E00E5A43B /* UIView+ScaleAnimation.m */,
+				A11C000F1D50EEF300E5A43B /* UIView+ResetAnimation.h */,
+				A11C00101D50EEF300E5A43B /* UIView+ResetAnimation.m */,
+				B6A6FA2D1D4A020A00EA1766 /* AndyAnimationConst.h */,
+				B6A6FA2E1D4A020A00EA1766 /* AndyAnimationConst.m */,
+			);
+			path = AndyAnimation;
+			sourceTree = "<group>";
+		};
+		CABEF3B5251D2D687E9F7F45 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C433DD2F63AD0C67ABC5BB7 /* libPods-AndyAnimation_Test.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B6A2F05A1D49C3E600E8145C /* AndyAnimation_Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6A2F0881D49C3E600E8145C /* Build configuration list for PBXNativeTarget "AndyAnimation_Test" */;
+			buildPhases = (
+				C99D913BFC1F654D2370E96D /* [CP] Check Pods Manifest.lock */,
+				B6A2F0571D49C3E600E8145C /* Sources */,
+				B6A2F0581D49C3E600E8145C /* Frameworks */,
+				B6A2F0591D49C3E600E8145C /* Resources */,
+				E8821AA16DC9B83378695559 /* [CP] Embed Pods Frameworks */,
+				AC25C321EA529458D655125C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AndyAnimation_Test;
+			productName = AndyAnimation_Test;
+			productReference = B6A2F05B1D49C3E600E8145C /* AndyAnimation_Test.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B6A2F0731D49C3E600E8145C /* AndyAnimation_TestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6A2F08B1D49C3E600E8145C /* Build configuration list for PBXNativeTarget "AndyAnimation_TestTests" */;
+			buildPhases = (
+				B6A2F0701D49C3E600E8145C /* Sources */,
+				B6A2F0711D49C3E600E8145C /* Frameworks */,
+				B6A2F0721D49C3E600E8145C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6A2F0761D49C3E600E8145C /* PBXTargetDependency */,
+			);
+			name = AndyAnimation_TestTests;
+			productName = AndyAnimation_TestTests;
+			productReference = B6A2F0741D49C3E600E8145C /* AndyAnimation_TestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B6A2F07E1D49C3E600E8145C /* AndyAnimation_TestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6A2F08E1D49C3E600E8145C /* Build configuration list for PBXNativeTarget "AndyAnimation_TestUITests" */;
+			buildPhases = (
+				B6A2F07B1D49C3E600E8145C /* Sources */,
+				B6A2F07C1D49C3E600E8145C /* Frameworks */,
+				B6A2F07D1D49C3E600E8145C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6A2F0811D49C3E600E8145C /* PBXTargetDependency */,
+			);
+			name = AndyAnimation_TestUITests;
+			productName = AndyAnimation_TestUITests;
+			productReference = B6A2F07F1D49C3E600E8145C /* AndyAnimation_TestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B6A2F0531D49C3E600E8145C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Andy;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = andyli;
+				TargetAttributes = {
+					B6A2F05A1D49C3E600E8145C = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					B6A2F0731D49C3E600E8145C = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = B6A2F05A1D49C3E600E8145C;
+					};
+					B6A2F07E1D49C3E600E8145C = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = B6A2F05A1D49C3E600E8145C;
+					};
+				};
+			};
+			buildConfigurationList = B6A2F0561D49C3E600E8145C /* Build configuration list for PBXProject "AndyAnimation_Test" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B6A2F0521D49C3E600E8145C;
+			productRefGroup = B6A2F05C1D49C3E600E8145C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B6A2F05A1D49C3E600E8145C /* AndyAnimation_Test */,
+				B6A2F0731D49C3E600E8145C /* AndyAnimation_TestTests */,
+				B6A2F07E1D49C3E600E8145C /* AndyAnimation_TestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B6A2F0591D49C3E600E8145C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6A2F06B1D49C3E600E8145C /* Assets.xcassets in Resources */,
+				B6A6FA1C1D49F22400EA1766 /* AndyFadeViewController.xib in Resources */,
+				B6A2F0BB1D49DC3A00E8145C /* AndyMainTableViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6A2F0721D49C3E600E8145C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6A2F07D1D49C3E600E8145C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AC25C321EA529458D655125C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AndyAnimation_Test/Pods-AndyAnimation_Test-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C99D913BFC1F654D2370E96D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E8821AA16DC9B83378695559 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AndyAnimation_Test/Pods-AndyAnimation_Test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B6A2F0571D49C3E600E8145C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A11CFFFF1D50E35700E5A43B /* UIView+MoveAnimation.m in Sources */,
+				B6A6FA351D4A0F6200EA1766 /* CALayer+MoveAniamtion.m in Sources */,
+				A11C000E1D50EA4400E5A43B /* UIView+RotateAnimation.m in Sources */,
+				B6461C5A1D4EEF0A00CD1E5A /* UIView+FadeAnimation.m in Sources */,
+				B6461C601D4F06D800CD1E5A /* CALayer+ScaleAnimation.m in Sources */,
+				B6A2F0AE1D49DB8100E8145C /* AppDelegate.m in Sources */,
+				B64AB9561D5051E7005E4F3D /* CALayer+FlipAnimation.m in Sources */,
+				B64AB9591D507B82005E4F3D /* CALayer+SpecialAnimation.m in Sources */,
+				B64AB95C1D50A92C005E4F3D /* CALayer+ResetAnimation.m in Sources */,
+				B6461C631D4F07FD00CD1E5A /* CALayer+RotateAnimation.m in Sources */,
+				B6A2F0BA1D49DC3A00E8145C /* AndyMainTableViewController.m in Sources */,
+				B6A6FA2C1D4A018A00EA1766 /* CALayer+BaseAnimation.m in Sources */,
+				B6A6FA1B1D49F22400EA1766 /* AndyFadeViewController.m in Sources */,
+				A11C000B1D50E98800E5A43B /* UIView+FlipAnimation.m in Sources */,
+				A11C00081D50E8AD00E5A43B /* UIView+SpecialAnimation.m in Sources */,
+				A11C00021D50E41E00E5A43B /* UIView+ScaleAnimation.m in Sources */,
+				B6A6FA171D49EFD400EA1766 /* AndyConst.m in Sources */,
+				A11C00111D50EEF300E5A43B /* UIView+ResetAnimation.m in Sources */,
+				B6A2F0601D49C3E600E8145C /* main.m in Sources */,
+				B6A34DA41D4F5712005EBB4C /* CALayer+BounceAnimation.m in Sources */,
+				B6A6FA251D49FBB400EA1766 /* CALayer+FadeAnimation.m in Sources */,
+				B6461C591D4EEF0A00CD1E5A /* UIView+BaseAnimation.m in Sources */,
+				B6A6FA2F1D4A020A00EA1766 /* AndyAnimationConst.m in Sources */,
+				A11C00051D50E5DE00E5A43B /* UIView+BounceAnimation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6A2F0701D49C3E600E8145C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6A2F0791D49C3E600E8145C /* AndyAnimation_TestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6A2F07B1D49C3E600E8145C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6A2F0841D49C3E600E8145C /* AndyAnimation_TestUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B6A2F0761D49C3E600E8145C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6A2F05A1D49C3E600E8145C /* AndyAnimation_Test */;
+			targetProxy = B6A2F0751D49C3E600E8145C /* PBXContainerItemProxy */;
+		};
+		B6A2F0811D49C3E600E8145C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6A2F05A1D49C3E600E8145C /* AndyAnimation_Test */;
+			targetProxy = B6A2F0801D49C3E600E8145C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B6A2F0861D49C3E600E8145C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B6A2F0871D49C3E600E8145C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B6A2F0891D49C3E600E8145C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FDBF64A0FAAFB347759401E /* Pods-AndyAnimation_Test.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "${SRCROOT}/AndyAnimation_Test/Classes/Other/PrefixHeader.pch";
+				INFOPLIST_FILE = AndyAnimation_Test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andy4app.AndyAnimation-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
+			};
+			name = Debug;
+		};
+		B6A2F08A1D49C3E600E8145C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B8C70382CA81FA991D5461C /* Pods-AndyAnimation_Test.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "${SRCROOT}/AndyAnimation_Test/Classes/Other/PrefixHeader.pch";
+				INFOPLIST_FILE = AndyAnimation_Test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andy4app.AndyAnimation-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
+			};
+			name = Release;
+		};
+		B6A2F08C1D49C3E600E8145C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AndyAnimation_TestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andy4app.AndyAnimation-TestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AndyAnimation_Test.app/AndyAnimation_Test";
+			};
+			name = Debug;
+		};
+		B6A2F08D1D49C3E600E8145C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AndyAnimation_TestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andy4app.AndyAnimation-TestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AndyAnimation_Test.app/AndyAnimation_Test";
+			};
+			name = Release;
+		};
+		B6A2F08F1D49C3E600E8145C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AndyAnimation_TestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andy4app.AndyAnimation-TestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AndyAnimation_Test;
+			};
+			name = Debug;
+		};
+		B6A2F0901D49C3E600E8145C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AndyAnimation_TestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andy4app.AndyAnimation-TestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AndyAnimation_Test;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B6A2F0561D49C3E600E8145C /* Build configuration list for PBXProject "AndyAnimation_Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6A2F0861D49C3E600E8145C /* Debug */,
+				B6A2F0871D49C3E600E8145C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6A2F0881D49C3E600E8145C /* Build configuration list for PBXNativeTarget "AndyAnimation_Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6A2F0891D49C3E600E8145C /* Debug */,
+				B6A2F08A1D49C3E600E8145C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6A2F08B1D49C3E600E8145C /* Build configuration list for PBXNativeTarget "AndyAnimation_TestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6A2F08C1D49C3E600E8145C /* Debug */,
+				B6A2F08D1D49C3E600E8145C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6A2F08E1D49C3E600E8145C /* Build configuration list for PBXNativeTarget "AndyAnimation_TestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6A2F08F1D49C3E600E8145C /* Debug */,
+				B6A2F0901D49C3E600E8145C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B6A2F0531D49C3E600E8145C /* Project object */;
+}
