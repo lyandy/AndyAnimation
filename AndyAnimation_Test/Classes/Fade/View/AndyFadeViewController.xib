@@ -116,7 +116,13 @@
                     <state key="normal" title="In Right"/>
                 </button>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JTH-bQ-vPy">
-                    <rect key="frame" x="37" y="158" width="246" height="63"/>
+                    <rect key="frame" x="100" y="86" width="133" height="104"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r60-DJ-Eps">
+                            <rect key="frame" x="43" y="37" width="46" height="30"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                    </subviews>
                     <color key="backgroundColor" red="0.22851583959999999" green="0.71744109950000001" blue="0.19747412710000001" alpha="1" colorSpace="calibratedRGB"/>
                 </view>
             </subviews>

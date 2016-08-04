@@ -135,11 +135,7 @@
 
 - (void)andy_addSwingAnimationWithKey:(NSString *)key completion:(void (^)(BOOL finished))completion
 {
-    CGPoint oldAnchorPoint = self.anchorPoint;
-    self.anchorPoint = CGPointMake(0.5, 0.0);
-    [self setPosition:CGPointMake(self.position.x + self.bounds.size.width * (self.anchorPoint.x - oldAnchorPoint.x), self.position.y + self.bounds.size.height * (self.anchorPoint.y - oldAnchorPoint.y))];
-    
-    [self rotateToAngle:@(M_PI_4 / 2) fromAngle:@0.0 propertyName:kPOPLayerRotation duration:0.08 forKey:key completion:^(BOOL finished) {
+    [self rotateToAngle:@(M_PI_4 / 2) fromAngle:@0.0 axle:AndyMediaRotateXY duration:0.08 forKey:key completion:^(BOOL finished) {
         POPSpringAnimation *swingAnim = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerRotation];
         swingAnim.springBounciness = 30;
         swingAnim.springSpeed = 20;
@@ -215,27 +211,27 @@
     
     [self scaleToValue:scaleMinValue fromValue:scaleOriginValue duration:scaleTime timingFunction:kCAMediaTimingFunctionLinear forKey:key completion:nil];
     
-    [self rotateToAngle:@(-rotateAngle) fromAngle:@0.0 propertyName:kPOPLayerRotation duration:scaleTime forKey:key completion:^(BOOL finished) {
+    [self rotateToAngle:@(-rotateAngle) fromAngle:@0.0 axle:AndyMediaRotateXY duration:scaleTime forKey:key completion:^(BOOL finished) {
         if (finished)
         {
             [self scaleToValue:scaleMaxValue fromValue:scaleMinValue duration:0.4 timingFunction:kCAMediaTimingFunctionEaseOut forKey:key completion:nil];
             
-            [self rotateToAngle:@(rotateAngle) fromAngle:@(-rotateAngle) propertyName:kPOPLayerRotation duration:roateTime forKey:key completion:^(BOOL finished) {
+            [self rotateToAngle:@(rotateAngle) fromAngle:@(-rotateAngle) axle:AndyMediaRotateXY duration:roateTime forKey:key completion:^(BOOL finished) {
                 if (finished)
                 {
-                    [self rotateToAngle:@(-rotateAngle) fromAngle:@(rotateAngle) propertyName:kPOPLayerRotation duration:roateTime forKey:key completion:^(BOOL finished) {
+                    [self rotateToAngle:@(-rotateAngle) fromAngle:@(rotateAngle) axle:AndyMediaRotateXY duration:roateTime forKey:key completion:^(BOOL finished) {
                         if (finished)
                         {
-                            [self rotateToAngle:@(rotateAngle) fromAngle:@(-rotateAngle) propertyName:kPOPLayerRotation duration:roateTime forKey:key completion:^(BOOL finished) {
+                            [self rotateToAngle:@(rotateAngle) fromAngle:@(-rotateAngle) axle:AndyMediaRotateXY duration:roateTime forKey:key completion:^(BOOL finished) {
                                 if (finished)
                                 {
-                                    [self rotateToAngle:@(-rotateAngle) fromAngle:@(rotateAngle) propertyName:kPOPLayerRotation duration:roateTime forKey:key completion:^(BOOL finished) {
+                                    [self rotateToAngle:@(-rotateAngle) fromAngle:@(rotateAngle) axle:AndyMediaRotateXY duration:roateTime forKey:key completion:^(BOOL finished) {
                                         if (finished)
                                         {
-                                            [self rotateToAngle:@(rotateAngle) fromAngle:@(-rotateAngle) propertyName:kPOPLayerRotation duration:roateTime forKey:key completion:^(BOOL finished) {
+                                            [self rotateToAngle:@(rotateAngle) fromAngle:@(-rotateAngle) axle:AndyMediaRotateXY duration:roateTime forKey:key completion:^(BOOL finished) {
                                                 if (finished)
                                                 {
-                                                    [self rotateToAngle:@0.0 fromAngle:@(rotateAngle) propertyName:kPOPLayerRotation duration:roateTime forKey:key completion:^(BOOL finished) {
+                                                    [self rotateToAngle:@0.0 fromAngle:@(rotateAngle) axle:AndyMediaRotateXY duration:roateTime forKey:key completion:^(BOOL finished) {
                                                         if (finished)
                                                         {
                                                             [self scaleToValue:scaleOriginValue fromValue:scaleMaxValue duration:scaleTime timingFunction:kCAMediaTimingFunctionLinear forKey:key completion:^(BOOL finished) {

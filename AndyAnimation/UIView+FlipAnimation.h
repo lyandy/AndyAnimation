@@ -18,8 +18,6 @@
 
 - (void)andy_addFlipInXAnimationWithDuration:(CGFloat)duration completion:(void (^)(BOOL finished))completion;
 
-- (void)andy_addFlipInXAnimationWithDuration:(CGFloat)duration fromOpacityValue:(NSValue *)fromValue forKey:(NSString *)key completion:(void (^)(BOOL finished))completion;
-
 
 - (void)andy_addFlipInYAnimation;
 
@@ -29,7 +27,8 @@
 
 - (void)andy_addFlipInYAnimationWithDuration:(CGFloat)duration completion:(void (^)(BOOL finished))completion;
 
-- (void)andy_addFlipInYAnimationWithDuration:(CGFloat)duration fromOpacityValue:(NSValue *)fromValue forKey:(NSString *)key completion:(void (^)(BOOL finished))completion;
+
+- (void)andy_addFlipInAnimationWithDuration:(CGFloat)duration axle:(AndyMediaRotateAxle)axle fromOpacityValue:(NSValue *)fromValue forKey:(NSString *)key completion:(void (^)(BOOL finished))completion;
 
 
 - (void)andy_addFlipOutXAnimation;
@@ -40,8 +39,6 @@
 
 - (void)andy_addFlipOutXAnimationWithDuration:(CGFloat)duration completion:(void (^)(BOOL finished))completion;
 
-- (void)andy_addFlipOutXAnimationWithDuration:(CGFloat)duration toOpacityValue:(NSValue *)toValue forKey:(NSString *)key completion:(void (^)(BOOL finished))completion;
-
 
 - (void)andy_addFlipOutYAnimation;
 
@@ -51,7 +48,8 @@
 
 - (void)andy_addFlipOutYAnimationWithDuration:(CGFloat)duration completion:(void (^)(BOOL finished))completion;
 
-- (void)andy_addFlipOutYAnimationWithDuration:(CGFloat)duration toOpacityValue:(NSValue *)toValue forKey:(NSString *)key completion:(void (^)(BOOL finished))completion;
+
+- (void)andy_addFlipOutAnimationWithDuration:(CGFloat)duration axle:(AndyMediaRotateAxle)axle  toOpacityValue:(NSValue *)fromValue forKey:(NSString *)key completion:(void (^)(BOOL finished))completion;
 
 
 
@@ -63,8 +61,6 @@
 
 - (void)andy_addFlipInXSpringAnimationWithSpeed:(CGFloat)speed completion:(void (^)(BOOL finished))completion;
 
-- (void)andy_addFlipInXSpringAnimationWithSpeed:(CGFloat)speed bounciness:(CGFloat)bounciness fromOpacityValue:(NSValue *)fromValue forKey:(NSString *)key completion:(void (^)(BOOL finished))completion;
-
 
 - (void)andy_addFlipInYSpringAnimation;
 
@@ -74,7 +70,8 @@
 
 - (void)andy_addFlipInYSpringAnimationWithSpeed:(CGFloat)speed completion:(void (^)(BOOL finished))completion;
 
-- (void)andy_addFlipInYSpringAnimationWithSpeed:(CGFloat)speed bounciness:(CGFloat)bounciness fromOpacityValue:(NSValue *)fromValue forKey:(NSString *)key completion:(void (^)(BOOL finished))completion;
+
+- (void)andy_addFlipInSpringAnimationWithSpeed:(CGFloat)speed bounciness:(CGFloat)bounciness axle:(AndyMediaRotateAxle)axle  fromOpacityValue:(NSValue *)fromValue forKey:(NSString *)key completion:(void (^)(BOOL finished))completion;
 
 
 

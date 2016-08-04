@@ -8,6 +8,7 @@
 
 #import "AndyFadeViewController.h"
 
+
 @interface AndyFadeViewController ()
 @property (weak, nonatomic) IBOutlet UIView *viewSample;
 
@@ -15,8 +16,7 @@
 
 @implementation AndyFadeViewController
 - (IBAction)btnIn_Click:(UIButton *)sender {
-    
-    [self.viewSample andy_addFadeInUpAnimation];
+    [self.viewSample.layer andy_addFlipInAnimationWithDuration:0.4 axle:AndyMediaRotateLeftY fromOpacityValue:@1.0 forKey:nil completion:nil];
     
 }
 
@@ -39,10 +39,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.viewSample.alpha = 0.0;
+//    self.viewSample.alpha = 0.0;
 //    self.viewSample.layer.opacity = 0;
-//    self.viewSample.clipsToBounds = YES;
-//    self.viewSample.layer.cornerRadius = 30;
+    self.viewSample.clipsToBounds = YES;
+    self.viewSample.layer.cornerRadius = 30;
     // Do any additional setup after loading the view from its nib.
 }
 

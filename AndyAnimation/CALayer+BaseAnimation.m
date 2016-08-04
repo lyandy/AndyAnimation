@@ -65,7 +65,7 @@
     [self pop_addAnimation:moveAnim forKey:key];
 }
 
-- (void)translateToDistance:(CGFloat)distance duration:(CGFloat)duration direction:(AndyMeidaTranslationDirection)direction isFromCurrentPoint:(BOOL)isFromCurrentPoint timingFunction:(NSString *)timingFunction forKey:(NSString *)key completion:(void (^)(BOOL))completion
+- (void)translateToDistance:(CGFloat)distance duration:(CGFloat)duration direction:(AndyMediaTranslationDirection)direction isFromCurrentPoint:(BOOL)isFromCurrentPoint timingFunction:(NSString *)timingFunction forKey:(NSString *)key completion:(void (^)(BOOL))completion
 {
     POPBasicAnimation *translateAnim = nil;
     
@@ -111,9 +111,50 @@
 
 }
 
-- (void)rotateToAngle:(NSValue *)toAngle fromAngle:(NSValue *)fromAngle propertyName:(NSString *)propertyName duration:(CGFloat)duration forKey:(NSString *)key completion:(void (^)(BOOL))completion
+- (NSString *)rotateWithAxle:(AndyMediaRotateAxle)axle
 {
-    POPBasicAnimation *rotateAnim = [POPBasicAnimation animationWithPropertyNamed:propertyName];
+    NSString *propertyName = nil;
+    CGPoint oldAnchorPoint = self.anchorPoint;
+    switch (axle)
+    {
+        case AndyMediaRotateTopX:
+            self.anchorPoint = CGPointMake(0.0, 0.0);
+            propertyName = kPOPLayerRotationX;
+            break;
+        case AndyMediaRotateCenterX:
+            propertyName = kPOPLayerRotationX;
+            break;
+        case AndyMediaRotateBottomX:
+            self.anchorPoint = CGPointMake(0.0, 1.0);
+            propertyName = kPOPLayerRotationX;
+            break;
+        case AndyMediaRotateLeftY:
+            self.anchorPoint = CGPointMake(0.0, 0.0);
+            propertyName = kPOPLayerRotationY;
+            break;
+        case AndyMediaRotateCenterY:
+            propertyName = kPOPLayerRotationY;
+            break;
+        case AndyMediaRotateRightY:
+            self.anchorPoint = CGPointMake(1.0, 0.0);
+            propertyName = kPOPLayerRotationY;
+            break;
+        case AndyMediaRotateXY:
+            self.anchorPoint = CGPointMake(0.5, 0.5);
+            propertyName = kPOPLayerRotation;
+            break;
+            
+        default:
+            break;
+    }
+    [self setPosition:CGPointMake(self.position.x + self.bounds.size.width * (self.anchorPoint.x - oldAnchorPoint.x), self.position.y + self.bounds.size.height * (self.anchorPoint.y - oldAnchorPoint.y))];
+    
+    return propertyName;
+}
+
+- (void)rotateToAngle:(NSValue *)toAngle fromAngle:(NSValue *)fromAngle axle:(AndyMediaRotateAxle)axle duration:(CGFloat)duration forKey:(NSString *)key completion:(void (^)(BOOL))completion
+{
+    POPBasicAnimation *rotateAnim = [POPBasicAnimation animationWithPropertyNamed:[self rotateWithAxle:axle]];
     
     rotateAnim.duration = duration;
     rotateAnim.fromValue = fromAngle;
@@ -129,9 +170,9 @@
     [self pop_addAnimation:rotateAnim forKey:key];
 }
 
-- (void)rotateInSpringToAngle:(NSValue *)toAngle fromAngle:(NSValue *)fromAngle propertyName:(NSString *)propertyName speed:(CGFloat)speed bounciness:(CGFloat)bounciness forKey:(NSString *)key completion:(void (^)(BOOL))completion
+- (void)rotateInSpringToAngle:(NSValue *)toAngle fromAngle:(NSValue *)fromAngle axle:(AndyMediaRotateAxle)axle speed:(CGFloat)speed bounciness:(CGFloat)bounciness forKey:(NSString *)key completion:(void (^)(BOOL))completion
 {
-    POPSpringAnimation *rotateSpringAnim = [POPSpringAnimation animationWithPropertyNamed:propertyName];
+    POPSpringAnimation *rotateSpringAnim = [POPSpringAnimation animationWithPropertyNamed:[self rotateWithAxle:axle]];
     
     rotateSpringAnim.springBounciness = bounciness;
     rotateSpringAnim.springSpeed = speed;
@@ -168,7 +209,7 @@
     [self pop_addAnimation:scaleAnim forKey:key];
 }
 
-- (void)bounceInSpringToDistance:(CGFloat)distance speed:(CGFloat)speed bounciness:(CGFloat)bounciness direction:(AndyMeidaBounceInSpringDirection)direction forKey:(NSString *)key completion:(void (^)(BOOL))completion
+- (void)bounceInSpringToDistance:(CGFloat)distance speed:(CGFloat)speed bounciness:(CGFloat)bounciness direction:(AndyMediaBounceInSpringDirection)direction forKey:(NSString *)key completion:(void (^)(BOOL))completion
 {
     POPSpringAnimation *bounceInAnim = nil;
     

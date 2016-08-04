@@ -16,6 +16,10 @@
     [self pop_removeAllAnimations];
     
     self.opacity = 1.0;
+    
+    CGPoint oldAnchorPoint = self.anchorPoint;
+    self.anchorPoint = CGPointMake(0.5, 0.5);
+    [self setPosition:CGPointMake(self.position.x + self.bounds.size.width * (self.anchorPoint.x - oldAnchorPoint.x), self.position.y + self.bounds.size.height * (self.anchorPoint.y - oldAnchorPoint.y))];
 
     POPBasicAnimation *resetRotateAnim = [POPBasicAnimation animationWithPropertyNamed:kPOPLayerRotation];
     resetRotateAnim.duration = 0.0;

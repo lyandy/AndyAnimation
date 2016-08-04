@@ -7,6 +7,7 @@
 //
 
 #import "UIView+BaseAnimation.h"
+#import "CALayer+BaseAnimation.h"
 #import <POP/POP.h>
 
 @implementation UIView (BaseAnimation)
@@ -65,7 +66,7 @@
     [self pop_addAnimation:moveAnim forKey:key];
 }
 
-- (void)translateToDistance:(CGFloat)distance duration:(CGFloat)duration direction:(AndyMeidaTranslationDirection)direction isFromCurrentPoint:(BOOL)isFromCurrentPoint timingFunction:(NSString *)timingFunction forKey:(NSString *)key completion:(void (^)(BOOL))completion
+- (void)translateToDistance:(CGFloat)distance duration:(CGFloat)duration direction:(AndyMediaTranslationDirection)direction isFromCurrentPoint:(BOOL)isFromCurrentPoint timingFunction:(NSString *)timingFunction forKey:(NSString *)key completion:(void (^)(BOOL))completion
 {
     
     POPBasicAnimation *translateAnim = [POPBasicAnimation animationWithPropertyNamed:kPOPViewCenter];
@@ -112,41 +113,14 @@
     
 }
 
-- (void)rotateToAngle:(NSValue *)toAngle fromAngle:(NSValue *)fromAngle propertyName:(NSString *)propertyName duration:(CGFloat)duration forKey:(NSString *)key completion:(void (^)(BOOL))completion
+- (void)rotateToAngle:(NSValue *)toAngle fromAngle:(NSValue *)fromAngle axle:(AndyMediaRotateAxle)axle duration:(CGFloat)duration forKey:(NSString *)key completion:(void (^)(BOOL))completion
 {
-    POPBasicAnimation *rotateAnim = [POPBasicAnimation animationWithPropertyNamed:propertyName];
-    
-    rotateAnim.duration = duration;
-    rotateAnim.fromValue = fromAngle;
-    rotateAnim.toValue = toAngle;
-    
-    rotateAnim.completionBlock = ^(POPAnimation *anim, BOOL finished){
-        if (completion != nil)
-        {
-            completion(finished);
-        }
-    };
-    
-    [self.layer pop_addAnimation:rotateAnim forKey:key];
+    [self.layer rotateToAngle:toAngle fromAngle:fromAngle axle:axle duration:duration forKey:key completion:completion];
 }
 
-- (void)rotateInSpringToAngle:(NSValue *)toAngle fromAngle:(NSValue *)fromAngle propertyName:(NSString *)propertyName speed:(CGFloat)speed bounciness:(CGFloat)bounciness forKey:(NSString *)key completion:(void (^)(BOOL))completion
+- (void)rotateInSpringToAngle:(NSValue *)toAngle fromAngle:(NSValue *)fromAngle axle:(AndyMediaRotateAxle)axle speed:(CGFloat)speed bounciness:(CGFloat)bounciness forKey:(NSString *)key completion:(void (^)(BOOL finished))completion;
 {
-    POPSpringAnimation *rotateSpringAnim = [POPSpringAnimation animationWithPropertyNamed:propertyName];
-    
-    rotateSpringAnim.springBounciness = bounciness;
-    rotateSpringAnim.springSpeed = speed;
-    rotateSpringAnim.fromValue = fromAngle;
-    rotateSpringAnim.toValue = toAngle;
-    
-    rotateSpringAnim.completionBlock = ^(POPAnimation *anim, BOOL finished){
-        if (completion != nil)
-        {
-            completion(finished);
-        }
-    };
-    
-    [self.layer pop_addAnimation:rotateSpringAnim forKey:key];
+    [self.layer rotateInSpringToAngle:toAngle fromAngle:fromAngle axle:axle speed:speed bounciness:bounciness forKey:key completion:completion];
 }
 
 
@@ -169,7 +143,7 @@
     [self pop_addAnimation:scaleAnim forKey:key];
 }
 
-- (void)bounceInSpringToDistance:(CGFloat)distance speed:(CGFloat)speed bounciness:(CGFloat)bounciness direction:(AndyMeidaBounceInSpringDirection)direction forKey:(NSString *)key completion:(void (^)(BOOL))completion
+- (void)bounceInSpringToDistance:(CGFloat)distance speed:(CGFloat)speed bounciness:(CGFloat)bounciness direction:(AndyMediaBounceInSpringDirection)direction forKey:(NSString *)key completion:(void (^)(BOOL))completion
 {
     POPSpringAnimation *bounceInAnim = [POPSpringAnimation animationWithPropertyNamed:kPOPViewCenter];
     
