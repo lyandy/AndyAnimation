@@ -34,7 +34,7 @@
 
 - (void)andy_addRotateAnimationToAngle:(NSValue *)angel duration:(CGFloat)duration forKey:(NSString *)key completion:(void (^)(BOOL finished))completion
 {
-    [self rotateToAngle:angel fromAngle:@0.0 axle:AndyMediaRotateXY duration:duration forKey:key completion:completion];
+    [self rotateToAngle:angel fromAngle:@0.0 rotateAxle:AndyMediaRotateXY duration:duration forKey:key completion:completion];
 }
 
 

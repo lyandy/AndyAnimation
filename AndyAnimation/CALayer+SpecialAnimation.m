@@ -135,7 +135,7 @@
 
 - (void)andy_addSwingAnimationWithKey:(NSString *)key completion:(void (^)(BOOL finished))completion
 {
-    [self rotateToAngle:@(M_PI_4 / 2) fromAngle:@0.0 axle:AndyMediaRotateXY duration:0.08 forKey:key completion:^(BOOL finished) {
+    [self rotateToAngle:@(M_PI_4 / 2) fromAngle:@0.0 rotateAxle:AndyMediaRotateXY duration:0.08 forKey:key completion:^(BOOL finished) {
         POPSpringAnimation *swingAnim = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerRotation];
         swingAnim.springBounciness = 30;
         swingAnim.springSpeed = 20;
@@ -211,27 +211,27 @@
     
     [self scaleToValue:scaleMinValue fromValue:scaleOriginValue duration:scaleTime timingFunction:kCAMediaTimingFunctionLinear forKey:key completion:nil];
     
-    [self rotateToAngle:@(-rotateAngle) fromAngle:@0.0 axle:AndyMediaRotateXY duration:scaleTime forKey:key completion:^(BOOL finished) {
+    [self rotateToAngle:@(-rotateAngle) fromAngle:@0.0 rotateAxle:AndyMediaRotateXY duration:scaleTime forKey:key completion:^(BOOL finished) {
         if (finished)
         {
             [self scaleToValue:scaleMaxValue fromValue:scaleMinValue duration:0.4 timingFunction:kCAMediaTimingFunctionEaseOut forKey:key completion:nil];
             
-            [self rotateToAngle:@(rotateAngle) fromAngle:@(-rotateAngle) axle:AndyMediaRotateXY duration:roateTime forKey:key completion:^(BOOL finished) {
+            [self rotateToAngle:@(rotateAngle) fromAngle:@(-rotateAngle) rotateAxle:AndyMediaRotateXY duration:roateTime forKey:key completion:^(BOOL finished) {
                 if (finished)
                 {
-                    [self rotateToAngle:@(-rotateAngle) fromAngle:@(rotateAngle) axle:AndyMediaRotateXY duration:roateTime forKey:key completion:^(BOOL finished) {
+                    [self rotateToAngle:@(-rotateAngle) fromAngle:@(rotateAngle) rotateAxle:AndyMediaRotateXY duration:roateTime forKey:key completion:^(BOOL finished) {
                         if (finished)
                         {
-                            [self rotateToAngle:@(rotateAngle) fromAngle:@(-rotateAngle) axle:AndyMediaRotateXY duration:roateTime forKey:key completion:^(BOOL finished) {
+                            [self rotateToAngle:@(rotateAngle) fromAngle:@(-rotateAngle) rotateAxle:AndyMediaRotateXY duration:roateTime forKey:key completion:^(BOOL finished) {
                                 if (finished)
                                 {
-                                    [self rotateToAngle:@(-rotateAngle) fromAngle:@(rotateAngle) axle:AndyMediaRotateXY duration:roateTime forKey:key completion:^(BOOL finished) {
+                                    [self rotateToAngle:@(-rotateAngle) fromAngle:@(rotateAngle) rotateAxle:AndyMediaRotateXY duration:roateTime forKey:key completion:^(BOOL finished) {
                                         if (finished)
                                         {
-                                            [self rotateToAngle:@(rotateAngle) fromAngle:@(-rotateAngle) axle:AndyMediaRotateXY duration:roateTime forKey:key completion:^(BOOL finished) {
+                                            [self rotateToAngle:@(rotateAngle) fromAngle:@(-rotateAngle) rotateAxle:AndyMediaRotateXY duration:roateTime forKey:key completion:^(BOOL finished) {
                                                 if (finished)
                                                 {
-                                                    [self rotateToAngle:@0.0 fromAngle:@(rotateAngle) axle:AndyMediaRotateXY duration:roateTime forKey:key completion:^(BOOL finished) {
+                                                    [self rotateToAngle:@0.0 fromAngle:@(rotateAngle) rotateAxle:AndyMediaRotateXY duration:roateTime forKey:key completion:^(BOOL finished) {
                                                         if (finished)
                                                         {
                                                             [self scaleToValue:scaleOriginValue fromValue:scaleMaxValue duration:scaleTime timingFunction:kCAMediaTimingFunctionLinear forKey:key completion:^(BOOL finished) {

@@ -113,14 +113,14 @@
     
 }
 
-- (void)rotateToAngle:(NSValue *)toAngle fromAngle:(NSValue *)fromAngle axle:(AndyMediaRotateAxle)axle duration:(CGFloat)duration forKey:(NSString *)key completion:(void (^)(BOOL))completion
+- (void)rotateToAngle:(NSValue *)toAngle fromAngle:(NSValue *)fromAngle rotateAxle:(AndyMediaRotateAxle)axle duration:(CGFloat)duration forKey:(NSString *)key completion:(void (^)(BOOL))completion
 {
-    [self.layer rotateToAngle:toAngle fromAngle:fromAngle axle:axle duration:duration forKey:key completion:completion];
+    [self.layer rotateToAngle:toAngle fromAngle:fromAngle rotateAxle:axle duration:duration forKey:key completion:completion];
 }
 
-- (void)rotateInSpringToAngle:(NSValue *)toAngle fromAngle:(NSValue *)fromAngle axle:(AndyMediaRotateAxle)axle speed:(CGFloat)speed bounciness:(CGFloat)bounciness forKey:(NSString *)key completion:(void (^)(BOOL finished))completion;
+- (void)rotateInSpringToAngle:(NSValue *)toAngle fromAngle:(NSValue *)fromAngle rotateAxle:(AndyMediaRotateAxle)axle speed:(CGFloat)speed bounciness:(CGFloat)bounciness forKey:(NSString *)key completion:(void (^)(BOOL finished))completion;
 {
-    [self.layer rotateInSpringToAngle:toAngle fromAngle:fromAngle axle:axle speed:speed bounciness:bounciness forKey:key completion:completion];
+    [self.layer rotateInSpringToAngle:toAngle fromAngle:fromAngle rotateAxle:axle speed:speed bounciness:bounciness forKey:key completion:completion];
 }
 
 

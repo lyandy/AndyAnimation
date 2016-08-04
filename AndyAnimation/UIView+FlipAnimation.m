@@ -34,7 +34,7 @@
 
 - (void)andy_addFlipInXAnimationWithDuration:(CGFloat)duration completion:(void (^)(BOOL finished))completion
 {
-    [self andy_addFlipInAnimationWithDuration:duration axle:AndyMediaRotateCenterX
+    [self andy_addFlipInAnimationWithDuration:duration rotateAxle:AndyMediaRotateCenterX
                              fromOpacityValue:@1.0 forKey:nil completion:completion];
 }
 
@@ -56,16 +56,16 @@
 
 - (void)andy_addFlipInYAnimationWithDuration:(CGFloat)duration completion:(void (^)(BOOL finished))completion
 {
-    [self andy_addFlipInAnimationWithDuration:duration axle:AndyMediaRotateCenterY fromOpacityValue:@1.0 forKey:nil completion:completion];
+    [self andy_addFlipInAnimationWithDuration:duration rotateAxle:AndyMediaRotateCenterY fromOpacityValue:@1.0 forKey:nil completion:completion];
 }
 
 
 
-- (void)andy_addFlipInAnimationWithDuration:(CGFloat)duration axle:(AndyMediaRotateAxle)axle fromOpacityValue:(NSValue *)fromValue forKey:(NSString *)key completion:(void (^)(BOOL finished))completion
+- (void)andy_addFlipInAnimationWithDuration:(CGFloat)duration rotateAxle:(AndyMediaRotateAxle)axle fromOpacityValue:(NSValue *)fromValue forKey:(NSString *)key completion:(void (^)(BOOL finished))completion
 {
     [self fadeInAnimationWithDuration:duration fromOpacityValue:fromValue forKey:key completion:nil];
     
-    [self rotateToAngle:@0.0 fromAngle:@(M_PI_2) axle:axle duration:duration forKey:key completion:completion];
+    [self rotateToAngle:@0.0 fromAngle:@(M_PI_2) rotateAxle:axle duration:duration forKey:key completion:completion];
 }
 
 
@@ -88,7 +88,7 @@
 
 - (void)andy_addFlipOutXAnimationWithDuration:(CGFloat)duration completion:(void (^)(BOOL finished))completion
 {
-    [self andy_addFlipOutAnimationWithDuration:duration axle:AndyMediaRotateCenterX toOpacityValue:@1.0 forKey:nil completion:completion];
+    [self andy_addFlipOutAnimationWithDuration:duration rotateAxle:AndyMediaRotateCenterX toOpacityValue:@1.0 forKey:nil completion:completion];
 }
 
 
@@ -109,15 +109,15 @@
 
 - (void)andy_addFlipOutYAnimationWithDuration:(CGFloat)duration completion:(void (^)(BOOL finished))completion
 {
-    [self andy_addFlipOutAnimationWithDuration:duration axle:AndyMediaRotateCenterY toOpacityValue:@1.0 forKey:nil completion:completion];
+    [self andy_addFlipOutAnimationWithDuration:duration rotateAxle:AndyMediaRotateCenterY toOpacityValue:@1.0 forKey:nil completion:completion];
 }
 
 
-- (void)andy_addFlipOutAnimationWithDuration:(CGFloat)duration axle:(AndyMediaRotateAxle)axle  toOpacityValue:(NSValue *)fromValue forKey:(NSString *)key completion:(void (^)(BOOL finished))completion
+- (void)andy_addFlipOutAnimationWithDuration:(CGFloat)duration rotateAxle:(AndyMediaRotateAxle)axle  toOpacityValue:(NSValue *)fromValue forKey:(NSString *)key completion:(void (^)(BOOL finished))completion
 {
     [self fadeOutAnimationWithDuration:duration toOpacityValue:fromValue forKey:key completion:nil];
     
-    [self rotateToAngle:@(M_PI_2) fromAngle:@0.0 axle:axle duration:duration forKey:key completion:completion];
+    [self rotateToAngle:@(M_PI_2) fromAngle:@0.0 rotateAxle:axle duration:duration forKey:key completion:completion];
 }
 
 
@@ -138,7 +138,7 @@
 
 - (void)andy_addFlipInXSpringAnimationWithSpeed:(CGFloat)speed completion:(void (^)(BOOL finished))completion
 {
-    [self andy_addFlipInSpringAnimationWithSpeed:speed bounciness:FlipSpringBounciness axle:AndyMediaRotateCenterX fromOpacityValue:@1.0 forKey:nil completion:completion];
+    [self andy_addFlipInSpringAnimationWithSpeed:speed bounciness:FlipSpringBounciness rotateAxle:AndyMediaRotateCenterX fromOpacityValue:@1.0 forKey:nil completion:completion];
 }
 
 - (void)andy_addFlipInYSpringAnimation
@@ -158,14 +158,14 @@
 
 - (void)andy_addFlipInYSpringAnimationWithSpeed:(CGFloat)speed completion:(void (^)(BOOL finished))completion
 {
-    [self andy_addFlipInSpringAnimationWithSpeed:speed bounciness:FlipSpringBounciness axle:AndyMediaRotateCenterY fromOpacityValue:@1.0 forKey:nil completion:completion];
+    [self andy_addFlipInSpringAnimationWithSpeed:speed bounciness:FlipSpringBounciness rotateAxle:AndyMediaRotateCenterY fromOpacityValue:@1.0 forKey:nil completion:completion];
 }
 
 
-- (void)andy_addFlipInSpringAnimationWithSpeed:(CGFloat)speed bounciness:(CGFloat)bounciness axle:(AndyMediaRotateAxle)axle  fromOpacityValue:(NSValue *)fromValue forKey:(NSString *)key completion:(void (^)(BOOL finished))completion
+- (void)andy_addFlipInSpringAnimationWithSpeed:(CGFloat)speed bounciness:(CGFloat)bounciness rotateAxle:(AndyMediaRotateAxle)axle  fromOpacityValue:(NSValue *)fromValue forKey:(NSString *)key completion:(void (^)(BOOL finished))completion
 {
     [self fadeInAnimationWithDuration:speed * 0.05  fromOpacityValue:fromValue forKey:key completion:nil];
-    [self rotateInSpringToAngle:@0.0 fromAngle:@(M_PI_2) axle:axle speed:speed bounciness:bounciness forKey:key completion:completion];
+    [self rotateInSpringToAngle:@0.0 fromAngle:@(M_PI_2) rotateAxle:axle speed:speed bounciness:bounciness forKey:key completion:completion];
 }
 
 

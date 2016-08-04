@@ -16,7 +16,7 @@
 
 @implementation AndyFadeViewController
 - (IBAction)btnIn_Click:(UIButton *)sender {
-    [self.viewSample.layer andy_addFlipInAnimationWithDuration:0.4 axle:AndyMediaRotateLeftY fromOpacityValue:@1.0 forKey:nil completion:nil];
+    [self.viewSample.layer andy_addFlipInAnimationWithDuration:0.4 rotateAxle:AndyMediaRotateLeftY fromOpacityValue:@1.0 forKey:nil completion:nil];
     
 }
 

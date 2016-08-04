@@ -152,7 +152,7 @@
     return propertyName;
 }
 
-- (void)rotateToAngle:(NSValue *)toAngle fromAngle:(NSValue *)fromAngle axle:(AndyMediaRotateAxle)axle duration:(CGFloat)duration forKey:(NSString *)key completion:(void (^)(BOOL))completion
+- (void)rotateToAngle:(NSValue *)toAngle fromAngle:(NSValue *)fromAngle rotateAxle:(AndyMediaRotateAxle)axle duration:(CGFloat)duration forKey:(NSString *)key completion:(void (^)(BOOL))completion
 {
     POPBasicAnimation *rotateAnim = [POPBasicAnimation animationWithPropertyNamed:[self rotateWithAxle:axle]];
     
@@ -170,7 +170,7 @@
     [self pop_addAnimation:rotateAnim forKey:key];
 }
 
-- (void)rotateInSpringToAngle:(NSValue *)toAngle fromAngle:(NSValue *)fromAngle axle:(AndyMediaRotateAxle)axle speed:(CGFloat)speed bounciness:(CGFloat)bounciness forKey:(NSString *)key completion:(void (^)(BOOL))completion
+- (void)rotateInSpringToAngle:(NSValue *)toAngle fromAngle:(NSValue *)fromAngle rotateAxle:(AndyMediaRotateAxle)axle speed:(CGFloat)speed bounciness:(CGFloat)bounciness forKey:(NSString *)key completion:(void (^)(BOOL))completion
 {
     POPSpringAnimation *rotateSpringAnim = [POPSpringAnimation animationWithPropertyNamed:[self rotateWithAxle:axle]];
     
