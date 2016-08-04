@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AndyAnimationConst.h"
 
 @interface UIView (FlipAnimation)
 
