@@ -29,7 +29,7 @@
 
 - (void)andy_addMoveAnimationToPosition:(NSValue *)point duration:(CGFloat)duration completion:(void (^)(BOOL))completion
 {
-    [self andy_addMoveAnimationToPosition:point duration:ANDY_ANIMATION_DEFAULT_DURATION timingFunction:kCAMediaTimingFunctionLinear forKey:nil completion:completion];
+    [self andy_addMoveAnimationToPosition:point duration:duration timingFunction:kCAMediaTimingFunctionLinear forKey:nil completion:completion];
 }
 
 - (void)andy_addMoveAnimationToPosition:(NSValue *)point duration:(CGFloat)duration timingFunction:(NSString *)timingFunction forKey:(NSString *)key completion:(void (^)(BOOL finished))completion

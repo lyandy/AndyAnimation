@@ -259,6 +259,31 @@
     }
 }
 
+- (void)andy_addBounceInSpringAnimation
+{
+    [self andy_addBounceInSpringAnimationWithSpeed:BounceInSpringSpeed];
+}
+
+- (void)andy_addBounceInSpringAnimationWithCompletion:(void (^)(BOOL finished))completion
+{
+    [self andy_addBounceInSpringAnimationWithSpeed:BounceInSpringSpeed completion:completion];
+}
+
+- (void)andy_addBounceInSpringAnimationWithSpeed:(CGFloat)speed
+{
+    [self andy_addBounceInSpringAnimationWithSpeed:speed completion:nil];
+}
+
+- (void)andy_addBounceInSpringAnimationWithSpeed:(CGFloat)speed completion:(void (^)(BOOL finished))completion
+{
+    [self andy_addBounceInSpringAnimationSpeed:speed bounciness:BounceInSpringBounciness forKey:nil completion:completion];
+}
+
+- (void)andy_addBounceInSpringAnimationSpeed:(CGFloat)speed bounciness:(CGFloat)bounciness forKey:(NSString *)key completion:(void (^)(BOOL finished))completion
+{
+    [self bounceInSpringWithSpeed:speed bounciness:bounciness forKey:key completion:completion];
+}
+
 
 - (void)andy_addBounceInDownSpringAnimation
 {

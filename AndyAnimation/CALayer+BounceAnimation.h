@@ -75,6 +75,17 @@
 - (void)andy_addBounceInRightAnimationWithDistance:(CGFloat)distance duration:(CGFloat)duration forKey:(NSString *)key completion:(void (^)(BOOL finished))completion;
 
 
+- (void)andy_addBounceInSpringAnimation;
+
+- (void)andy_addBounceInSpringAnimationWithCompletion:(void (^)(BOOL finished))completion;
+
+- (void)andy_addBounceInSpringAnimationWithSpeed:(CGFloat)speed;
+
+- (void)andy_addBounceInSpringAnimationWithSpeed:(CGFloat)speed completion:(void (^)(BOOL finished))completion;
+
+- (void)andy_addBounceInSpringAnimationSpeed:(CGFloat)speed bounciness:(CGFloat)bounciness forKey:(NSString *)key completion:(void (^)(BOOL finished))completion;
+
+
 - (void)andy_addBounceInDownSpringAnimation;
 
 - (void)andy_addBounceInDownSpringAnimationWithCompletion:(void (^)(BOOL finished))completion;

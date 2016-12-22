@@ -22,7 +22,7 @@
 
 - (IBAction)btnOut_Click:(UIButton *)sender {
     
-    [self.viewSample andy_resetAnimation];
+    [self.viewSample andy_addRotateAnimationToAngle:@(M_PI)];
 }
 
 - (IBAction)btnOutUp_Click:(UIButton *)sender {

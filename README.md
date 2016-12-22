@@ -12,7 +12,7 @@ An amazing animation framework based on Pop
 ---
 _Before you run, you need pod install first. :)_
 
-_The version is 1.0.6_
+_The version is 1.0.7_
 
 _There are a lot of experience to improve_
 

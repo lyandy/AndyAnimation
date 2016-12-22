@@ -237,7 +237,23 @@
     [self pop_addAnimation:bounceInAnim forKey:key];
 }
 
-
+- (void)bounceInSpringWithSpeed:(CGFloat)speed bounciness:(CGFloat)bounciness forKey:(NSString *)key completion:(void (^)(BOOL))completion
+{
+    POPSpringAnimation *bounceInAnim = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerScaleXY];
+    bounceInAnim.springSpeed = speed;
+    bounceInAnim.fromValue = [NSValue valueWithCGSize:CGSizeMake(0.5, 0.5)];
+    bounceInAnim.toValue = [NSValue valueWithCGSize:CGSizeMake(1.0, 1.0)];
+    bounceInAnim.springBounciness = bounciness;
+    
+    bounceInAnim.completionBlock = ^(POPAnimation *anim, BOOL finished){
+        if (completion != nil)
+        {
+            completion(finished);
+        }
+    };
+    
+    [self pop_addAnimation:bounceInAnim forKey:key];
+}
 
 
 
