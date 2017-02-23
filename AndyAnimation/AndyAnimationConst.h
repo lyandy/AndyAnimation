@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+#define ANDYANIMATION_EXTERN UIKIT_EXTERN
+
+#define AndyAnimationAssert(condition, desc, ...)  NSAssert(condition, desc, ##__VA_ARGS__)
+
+#define AndyAnimationDeprecated(instead) NS_DEPRECATED(2_0, 2_0, 2_0, 2_0, instead)
+
 typedef NS_ENUM(NSInteger, AndyMediaTranslationDirection) {
     AndyMediaTranslationVertical, //纵向平滑形变
     AndyMediaTranslationHorizontal //横向平滑形变
@@ -29,9 +35,9 @@ typedef NS_ENUM(NSInteger, AndyMediaRotateAxle) {
 };
 
 
-UIKIT_EXTERN CGFloat const ANDY_ANIMATION_DEFAULT_DURATION;
+ANDYANIMATION_EXTERN CGFloat const ANDY_ANIMATION_DEFAULT_DURATION;
 
-UIKIT_EXTERN CGFloat const ANDY_ANIMATION_DEFAULT_DISTANCE;
+ANDYANIMATION_EXTERN CGFloat const ANDY_ANIMATION_DEFAULT_DISTANCE;
 
 
 

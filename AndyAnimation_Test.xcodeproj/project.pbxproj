@@ -570,6 +570,7 @@
 				TargetAttributes = {
 					B6A2F05A1D49C3E600E8145C = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 37PBFNZ5HH;
 					};
 					B6A2F0731D49C3E600E8145C = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -828,12 +829,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				DEVELOPMENT_TEAM = 37PBFNZ5HH;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "${SRCROOT}/AndyAnimation_Test/Classes/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = AndyAnimation_Test/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.andy4app.AndyAnimation-Test";
+				PRODUCT_BUNDLE_IDENTIFIER = andy.andy.andy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
@@ -845,12 +847,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				DEVELOPMENT_TEAM = 37PBFNZ5HH;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "${SRCROOT}/AndyAnimation_Test/Classes/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = AndyAnimation_Test/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.andy4app.AndyAnimation-Test";
+				PRODUCT_BUNDLE_IDENTIFIER = andy.andy.andy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
